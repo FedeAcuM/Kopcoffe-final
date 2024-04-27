@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kopcoffe, ¡el mejor cafe del Mundo!</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><button id="toggle-carrito">Carrito</button></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="inicio">
+      <h1>Kopcoffe</h1>
+      <p>Descubre una experiencia única en cada taza.</p>
+      <a href="#productos" class="btn-comprar">Explora nuestros productos</a>
+    </section>
+
+    <section id="productos">
+      <h2>Nuestros Productos</h2>
+      <div id="product-list">
+        <div class="product">
+          <h3>Café en Grano</h3>
+          <p>Precio: $10.99</p>
+          <button class="btn-comprar" data-action="agregar">Agregar</button>
+        </div>
+        <div class="product">
+          <h3>Café Molido</h3>
+          <p>Precio: $9.99</p>
+          <button class="btn-comprar" data-action="agregar">Agregar</button>
+        </div>
+        <div class="product">
+          <h3>Cápsulas de Café</h3>
+          <p>Precio: $12.99</p>
+          <button class="btn-comprar" data-action="agregar">Agregar</button>
+        </div>
+        <div class="product">
+          <h3>Café Instantáneo</h3>
+          <p>Precio: $8.99</p>
+          <button class="btn-comprar" data-action="agregar">Agregar</button>
+        </div>
+        <div class="product">
+          <h3>Café Descafeinado</h3>
+          <p>Precio: $11.99</p>
+          <button class="btn-comprar" data-action="agregar">Agregar</button>
+        </div>
+        <div class="product">
+          <h3>Café Orgánico</h3>
+          <p>Precio: $13.99</p>
+          <button class="btn-comprar" data-action="agregar">Agregar</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros">
+      <h2>Nuestra Historia</h2>
+      <p>Somos apasionados por el café desde hace más de 20 años. Nuestra misión es ofrecer la mejor calidad y variedad de café a nuestros clientes. El café, con su aroma embriagador y su sabor inconfundible, ha sido un compañero fiel en los momentos de vigilia y reflexión de la humanidad durante siglos.</p>
+      <p>La historia del café se remonta a tiempos antiguos en Etiopía, donde se cuenta una leyenda sobre un pastor llamado Kaldi, quien observó cómo sus cabras se volvían especialmente enérgicas después de comer las bayas rojas de cierta planta. Intrigado, probó las bayas él mismo y experimentó una sensación de alerta renovada. Luego, compartió el descubrimiento con un monje local, quien utilizó las bayas para preparar una bebida revitalizante. Así, nació la primera infusión de café.</p>
+      <p>Con el tiempo, el café se extendió desde África hasta Arabia, donde se convirtió en una parte esencial de la vida cotidiana y en una bebida de socialización. Los cafés, o qahveh khaneh, se convirtieron en lugares de encuentro para discutir política, religión, cultura y negocios. Desde allí, el café viajó a través del mundo árabe hacia Europa, donde pronto se popularizó y se convirtió en una parte integral de la vida diaria.</p>
+      <p>En el siglo XVII, los cafés se multiplicaron por toda Europa, convirtiéndose en puntos de encuentro para artistas, escritores, filósofos y pensadores. Las "casas de café" se convirtieron en símbolos de la Ilustración y la libertad de expresión, donde se intercambiaban ideas y se debatían los asuntos del día.</p>
+      <p>Con el tiempo, el café se transformó en una industria global, con plantaciones en América Latina, África y Asia. Hoy en día, el café sigue siendo una de las bebidas más consumidas en el mundo, con una amplia variedad de métodos de preparación, desde el clásico espresso italiano hasta el café filtrado en goteo y el café de especialidad meticulosamente elaborado.</p>
+      <p>Más allá de ser una simple bebida, el café es un símbolo de conexión humana, de conversaciones profundas y momentos compartidos. Su historia está entrelazada con la historia de la humanidad misma, y su influencia perdura en cada taza que disfrutamos.</p>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 Kopcoffe. Todos los derechos reservados.</p>
+  </footer>
+
+  <div id="carrito" class="hidden">
+    <h2>Carrito de Compras</h2>
+    <div id="cart-items"></div>
+    <p id="total">Total: $0.00</p>
+    <button id="vaciar-carrito" class="btn-comprar">Vaciar Carrito</button>
+    <button id="comprar" class="btn-comprar">Comprar</button>
+  </div>
+
+  <script src="./js/script.js" defer></script>
+</body>
+</html>
